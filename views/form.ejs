@@ -1,0 +1,35 @@
+<%- include('./templates/head') %>
+<body>
+    <header>
+        <h1>Introduce los datos</h1>
+    </header>
+    <main  class="container-sm">
+        <form action="/insert" method="POST" > 
+            <!-- send to rutas.js -->
+            <fieldset class="container-sm">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" name="nombre" id="nombre" class="form-control">
+            </div>
+            <div>
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" name="apellido" id="apellido" class="form-control">
+            </div>
+            <div>
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="text" name="telefono" id="telefono" class="form-control">
+            </div>
+            <div>
+                <label for="tipo" class="form-label">Tipo</label>
+                <input type="text" name="tipo" id="tipo" class="form-control">
+            </div>
+            <div class="my-4 mx-auto">
+                <input type="submit" value="Enviar" class="btn btn-primary mx-4">
+                <input type="reset" value="Borrar" class="btn btn-outline-primary mx-a4">
+                <a href="/" class="btn btn-light mx-4">Cancelar</a>
+            </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

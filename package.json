@@ -1,0 +1,22 @@
+{
+  "name": "05-agenda-tel",
+  "version": "1.0.0",
+  "description": "Agenda basica de telefonos",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manami-n/Cief_NODE_telefono.git"
+  },
+  "keywords": [],
+  "author": "Manami",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1"
+  }
+}

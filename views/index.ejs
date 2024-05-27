@@ -1,0 +1,41 @@
+<%- include('./templates/head') %>
+<body>
+    <header>
+        <h1>Mi Agenda de teléfonos</h1>
+        <a href="/form" class="btn btn-primary" role="button" aria-disabled="true">Primary link</a>
+    </header>
+    <main class="container-sm">
+
+        <table id="tabla" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Teléfono</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Test</td>
+                        <td>Test2</td>
+                        <td>1234</td>
+                        <td>Amigo</td>
+                    </tr>
+                <% datos.forEach(contacto => { %>
+                    <tr>
+                        <td><%= contacto.nombre %></td>
+                        <td><%= contacto.apellido %></td>
+                        <td><%= contacto.telefono %></td>
+                        <td><%= contacto.tipo %></td>
+                    </tr>
+                <% }) %>
+
+            </tbody>
+        </table>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
