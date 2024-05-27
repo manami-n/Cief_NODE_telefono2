@@ -2,7 +2,9 @@
 <body>
     <header>
         <h1>Mi Agenda de teléfonos</h1>
-        <a href="/form" class="btn btn-primary" role="button" aria-disabled="true">Primary link</a>
+        <div id="bs1" class="mx-auto container-sm">
+            <a href="/form" class="btn btn-primary" role="button" aria-disabled="true">Formulario</a>
+        </div>
     </header>
     <main class="container-sm">
 
@@ -16,12 +18,6 @@
                 </tr>
             </thead>
             <tbody>
-                    <tr>
-                        <td>Test</td>
-                        <td>Test2</td>
-                        <td>1234</td>
-                        <td>Amigo</td>
-                    </tr>
                 <% datos.forEach(contacto => { %>
                     <tr>
                         <td><%= contacto.nombre %></td>

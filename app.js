@@ -2,7 +2,6 @@
 import express from 'express';
 //const express = require('express');
 const app = express();
-// const bodyParser = require('body-parser'); // it's npm module.
 
 // Importado las rutas
 //const rutas = require('./rutas')
