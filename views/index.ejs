@@ -15,6 +15,8 @@
                     <th>Apellido</th>
                     <th>Teléfono</th>
                     <th>Tipo</th>
+                    <th>Editar</th>
+                    <th>Borrar</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,6 +26,9 @@
                         <td><%= contacto.apellido %></td>
                         <td><%= contacto.telefono %></td>
                         <td><%= contacto.tipo %></td>
+                        <td><a href="/form/<%= contacto.id %>" class="btn btn-outline-primary" role="button" aria-disabled="true">✏️</a>
+                            <a href="/form/<%= contacto.id %>/<%= contacto.nombre %>/<%= contacto.apellido %>/<%= contacto.telefono %>/<%= contacto.tipo %>" class="btn btn-light" role="button" aria-disabled="true">✏️</a></td>
+                        <td><a href="/borrar/<%= contacto.id %>" class="btn btn-light" role="button" aria-disabled="true">🗑️</a></td>
                     </tr>
                 <% }) %>
 
